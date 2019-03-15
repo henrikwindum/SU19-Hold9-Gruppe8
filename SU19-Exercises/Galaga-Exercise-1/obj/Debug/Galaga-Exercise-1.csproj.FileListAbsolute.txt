@@ -1,0 +1,55 @@
+/home/jakob/Skrivebord/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/bin/Debug/Galaga_Exercise_1.exe
+/home/jakob/Skrivebord/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/bin/Debug/Galaga_Exercise_1.pdb
+/home/jakob/Skrivebord/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/bin/Debug/DIKUArcade.dll
+/home/jakob/Skrivebord/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/bin/Debug/OpenTK.dll
+/home/jakob/Skrivebord/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/bin/Debug/DIKUArcade.pdb
+/home/jakob/Skrivebord/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/bin/Debug/OpenTK.xml
+/home/jakob/Skrivebord/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/obj/Debug/Galaga-Exercise-1.csprojAssemblyReference.cache
+/home/jakob/Skrivebord/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/obj/Debug/Galaga-Exercise-1.csproj.CoreCompileInputs.cache
+/home/jakob/Skrivebord/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/obj/Debug/Galaga-Exercise-1.csproj.CopyComplete
+/home/jakob/Skrivebord/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/obj/Debug/Galaga_Exercise_1.exe
+/home/jakob/Skrivebord/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/obj/Debug/Galaga_Exercise_1.pdb
+C:/Users/Udlån/Documents/GitHub/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/obj/Debug/Galaga_Exercise_1.exe
+C:/Users/Udlån/Documents/GitHub/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/obj/Debug/Galaga_Exercise_1.pdb
+C:/Users/Udlån/Documents/GitHub/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/bin/Debug/Galaga_Exercise_1.exe
+C:/Users/Udlån/Documents/GitHub/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/bin/Debug/Galaga_Exercise_1.pdb
+C:/Users/Udlån/Documents/GitHub/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/bin/Debug/DIKUArcade.dll
+C:/Users/Udlån/Documents/GitHub/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/bin/Debug/OpenTK.dll
+C:/Users/Udlån/Documents/GitHub/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/bin/Debug/DIKUArcade.pdb
+C:/Users/Udlån/Documents/GitHub/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/bin/Debug/OpenTK.xml
+C:/Users/Udlån/Documents/GitHub/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/obj/Debug/Galaga-Exercise-1.csprojAssemblyReference.cache
+C:/Users/Udlån/Documents/GitHub/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/obj/Debug/Galaga-Exercise-1.csproj.CoreCompileInputs.cache
+C:/Users/Udlån/Documents/GitHub/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/obj/Debug/Galaga-Exercise-1.csproj.CopyComplete
+/home/jakob/Skrivebord/Uni/Opgaver Software Udvikling/SUW4/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/bin/Debug/Galaga_Exercise_1.exe
+/home/jakob/Skrivebord/Uni/Opgaver Software Udvikling/SUW4/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/bin/Debug/Galaga_Exercise_1.pdb
+/home/jakob/Skrivebord/Uni/Opgaver Software Udvikling/SUW4/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/bin/Debug/DIKUArcade.dll
+/home/jakob/Skrivebord/Uni/Opgaver Software Udvikling/SUW4/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/bin/Debug/OpenTK.dll
+/home/jakob/Skrivebord/Uni/Opgaver Software Udvikling/SUW4/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/bin/Debug/DIKUArcade.pdb
+/home/jakob/Skrivebord/Uni/Opgaver Software Udvikling/SUW4/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/bin/Debug/OpenTK.xml
+/home/jakob/Skrivebord/Uni/Opgaver Software Udvikling/SUW4/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/obj/Debug/Galaga-Exercise-1.csprojAssemblyReference.cache
+/home/jakob/Skrivebord/Uni/Opgaver Software Udvikling/SUW4/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/obj/Debug/Galaga-Exercise-1.csproj.CoreCompileInputs.cache
+/home/jakob/Skrivebord/Uni/Opgaver Software Udvikling/SUW4/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/obj/Debug/Galaga-Exercise-1.csproj.CopyComplete
+/home/jakob/Skrivebord/Uni/Opgaver Software Udvikling/SUW4/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/obj/Debug/Galaga_Exercise_1.exe
+/home/jakob/Skrivebord/Uni/Opgaver Software Udvikling/SUW4/SU19-H9-G8/SU19-Exercises/Galaga-Exercise-1/obj/Debug/Galaga_Exercise_1.pdb
+C:\Users\Henrik Windum\Desktop\Datalogi2. semester\Softwareudvikling\Softwareudvikling 4\SU19-H9-G8\SU19-Exercises\Galaga-Exercise-1\obj\Debug\Galaga-Exercise-1.csprojAssemblyReference.cache
+C:\Users\Henrik Windum\Desktop\Datalogi2. semester\Softwareudvikling\Softwareudvikling 4\SU19-H9-G8\SU19-Exercises\Galaga-Exercise-1\obj\Debug\Galaga-Exercise-1.csproj.CoreCompileInputs.cache
+C:\Users\Henrik Windum\Desktop\Datalogi2. semester\Softwareudvikling\Softwareudvikling 4\SU19-H9-G8\SU19-Exercises\Galaga-Exercise-1\obj\Debug\Galaga_Exercise_1.exe
+C:\Users\Henrik Windum\Desktop\Datalogi2. semester\Softwareudvikling\Softwareudvikling 4\SU19-H9-G8\SU19-Exercises\Galaga-Exercise-1\obj\Debug\Galaga_Exercise_1.pdb
+C:\Users\Henrik Windum\Desktop\Datalogi2. semester\Softwareudvikling\Softwareudvikling 4\SU19-H9-G8\SU19-Exercises\Galaga-Exercise-1\bin\Debug\Galaga_Exercise_1.exe
+C:\Users\Henrik Windum\Desktop\Datalogi2. semester\Softwareudvikling\Softwareudvikling 4\SU19-H9-G8\SU19-Exercises\Galaga-Exercise-1\bin\Debug\Galaga_Exercise_1.pdb
+C:\Users\Henrik Windum\Desktop\Datalogi2. semester\Softwareudvikling\Softwareudvikling 4\SU19-H9-G8\SU19-Exercises\Galaga-Exercise-1\bin\Debug\DIKUArcade.dll
+C:\Users\Henrik Windum\Desktop\Datalogi2. semester\Softwareudvikling\Softwareudvikling 4\SU19-H9-G8\SU19-Exercises\Galaga-Exercise-1\bin\Debug\OpenTK.dll
+C:\Users\Henrik Windum\Desktop\Datalogi2. semester\Softwareudvikling\Softwareudvikling 4\SU19-H9-G8\SU19-Exercises\Galaga-Exercise-1\bin\Debug\DIKUArcade.pdb
+C:\Users\Henrik Windum\Desktop\Datalogi2. semester\Softwareudvikling\Softwareudvikling 4\SU19-H9-G8\SU19-Exercises\Galaga-Exercise-1\bin\Debug\OpenTK.xml
+C:\Users\Henrik Windum\Desktop\Datalogi2. semester\Softwareudvikling\Softwareudvikling 4\SU19-H9-G8\SU19-Exercises\Galaga-Exercise-1\obj\Debug\Galaga-Exercise-1.csproj.CopyComplete
+C:\Users\Henrik Windum\Desktop\SU19-H9-G8\SU19-Exercises\Galaga-Exercise-1\bin\Debug\Galaga_Exercise_1.exe
+C:\Users\Henrik Windum\Desktop\SU19-H9-G8\SU19-Exercises\Galaga-Exercise-1\bin\Debug\Galaga_Exercise_1.pdb
+C:\Users\Henrik Windum\Desktop\SU19-H9-G8\SU19-Exercises\Galaga-Exercise-1\bin\Debug\DIKUArcade.dll
+C:\Users\Henrik Windum\Desktop\SU19-H9-G8\SU19-Exercises\Galaga-Exercise-1\bin\Debug\OpenTK.dll
+C:\Users\Henrik Windum\Desktop\SU19-H9-G8\SU19-Exercises\Galaga-Exercise-1\bin\Debug\DIKUArcade.pdb
+C:\Users\Henrik Windum\Desktop\SU19-H9-G8\SU19-Exercises\Galaga-Exercise-1\bin\Debug\OpenTK.xml
+C:\Users\Henrik Windum\Desktop\SU19-H9-G8\SU19-Exercises\Galaga-Exercise-1\obj\Debug\Galaga-Exercise-1.csprojAssemblyReference.cache
+C:\Users\Henrik Windum\Desktop\SU19-H9-G8\SU19-Exercises\Galaga-Exercise-1\obj\Debug\Galaga-Exercise-1.csproj.CoreCompileInputs.cache
+C:\Users\Henrik Windum\Desktop\SU19-H9-G8\SU19-Exercises\Galaga-Exercise-1\obj\Debug\Galaga-Exercise-1.csproj.CopyComplete
+C:\Users\Henrik Windum\Desktop\SU19-H9-G8\SU19-Exercises\Galaga-Exercise-1\obj\Debug\Galaga_Exercise_1.exe
+C:\Users\Henrik Windum\Desktop\SU19-H9-G8\SU19-Exercises\Galaga-Exercise-1\obj\Debug\Galaga_Exercise_1.pdb

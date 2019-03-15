@@ -1,0 +1,7 @@
+*./idea
+*.\idea
+*.xml
+*.exe
+*.gitmodules
+*.dll
+/DIKUArcade
