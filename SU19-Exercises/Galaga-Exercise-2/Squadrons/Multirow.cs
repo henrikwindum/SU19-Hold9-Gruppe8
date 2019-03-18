@@ -10,7 +10,7 @@ namespace Galaga_Exercise_2.Squadrons {
 
         public Multirow(int yrows) {
             if (yrows > 5) {
-                throw new Exception("There can be a maximum of 5 rows");
+                throw new Exception("Method Multirow: There can be a maximum of 5 rows");
             }
 
             Enemies = new EntityContainer<Enemy>();

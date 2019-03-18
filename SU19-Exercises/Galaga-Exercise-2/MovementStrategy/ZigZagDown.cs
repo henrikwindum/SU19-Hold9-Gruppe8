@@ -5,7 +5,7 @@ using DIKUArcade.Math;
 namespace Galaga_Exercise_2.MovementStrategy {
     public class ZigZagDown : IMovementStrategy {
         public void MoveEnemy(Enemy enemy) {
-            var yi = enemy.Shape.Position.Y - 0.0003f;
+            var yi = enemy.Shape.Position.Y - 0.00039f;
             var xi = enemy.StartPosition.X + 0.05f *
                      (float) Math.Sin(2 * Math.PI * (enemy.StartPosition.Y - yi) / 0.045f);
 
