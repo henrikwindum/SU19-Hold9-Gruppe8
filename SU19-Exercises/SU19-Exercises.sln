@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaga-Exercise-2", "Galaga
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIKUArcade", "..\DIKUArcade\DIKUArcade\DIKUArcade.csproj", "{A1E4E4DF-0967-4096-9E3C-FBC29B7D07DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaga-Exercise-3", "Galaga-Exercise-3\Galaga-Exercise-3.csproj", "{8A75F481-DDF1-410E-8909-D656CABA6640}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,5 +22,9 @@ Global
 		{EC364410-15FB-42E2-9C96-A23976F2BB45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC364410-15FB-42E2-9C96-A23976F2BB45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC364410-15FB-42E2-9C96-A23976F2BB45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A75F481-DDF1-410E-8909-D656CABA6640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A75F481-DDF1-410E-8909-D656CABA6640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A75F481-DDF1-410E-8909-D656CABA6640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A75F481-DDF1-410E-8909-D656CABA6640}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
