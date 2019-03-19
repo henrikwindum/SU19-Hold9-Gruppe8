@@ -4,11 +4,12 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{8A75F481-DDF1-410E-8909-D656CABA6640}</ProjectGuid>
-        <OutputType>Exe</OutputType>
+        <ProjectGuid>{F5685F3F-A904-4A5C-B7F1-5E7396DBD494}</ProjectGuid>
+        <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+        <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>Galaga_Exercise_3</RootNamespace>
-        <AssemblyName>Galaga_Exercise_3</AssemblyName>
+        <RootNamespace>TestGalaga3</RootNamespace>
+        <AssemblyName>TestGalaga3</AssemblyName>
         <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>
@@ -35,34 +36,19 @@
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
-        <Reference Include="System.Drawing" />
         <Reference Include="System.Xml" />
+        <Reference Include="nunit.framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb">
+            <HintPath>..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="GalagaBus.cs" />
-        <Compile Include="GalagaEntities\Enemy.cs" />
-        <Compile Include="GalagaEntities\PlayerShot.cs" />
-        <Compile Include="GalagaStates\GameStateType.cs" />
-        <Compile Include="GalagaStates\StateTransformer.cs" />
-        <Compile Include="Game.cs" />
-        <Compile Include="MovementStrategy\IMovementStrategy.cs" />
-        <Compile Include="MovementStrategy\MoveDown.cs" />
-        <Compile Include="MovementStrategy\NoMove.cs" />
-        <Compile Include="MovementStrategy\ZigZagDown.cs" />
-        <Compile Include="Player.cs" />
-        <Compile Include="Program.cs" />
+        <Compile Include="Tests.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <Compile Include="Score.cs" />
-        <Compile Include="Squadrons\ISquadron.cs" />
-        <Compile Include="Squadrons\Multirow.cs" />
-        <Compile Include="Squadrons\Parallel.cs" />
-        <Compile Include="Squadrons\Trapez.cs" />
-        <Compile Include="Squadrons\Triangle.cs" />
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\..\DIKUArcade\DIKUArcade\DIKUArcade.csproj">
-        <Project>{a1e4e4df-0967-4096-9e3c-fbc29b7d07dd}</Project>
-        <Name>DIKUArcade</Name>
+      <ProjectReference Include="..\Galaga-Exercise-3\Galaga-Exercise-3.csproj">
+        <Project>{8a75f481-ddf1-410e-8909-d656caba6640}</Project>
+        <Name>Galaga-Exercise-3</Name>
       </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
