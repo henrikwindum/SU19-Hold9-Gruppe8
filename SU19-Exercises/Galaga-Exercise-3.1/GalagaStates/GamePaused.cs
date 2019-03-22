@@ -22,7 +22,7 @@ namespace Galaga_Exercise_3._1.GalagaStates {
                 new Image(Path.Combine("Assets", "Images", "TitleImage.png")));
             pauseButtons = new[] {
                 new Text("Resume", new Vec2F(0.4f, 0.25f), new Vec2F(0.3f, 0.3f)),
-                new Text("Quit to menu", new Vec2F(0.4f, 0.15f), new Vec2F(0.3f, 0.3f))
+                new Text("Quit", new Vec2F(0.4f, 0.15f), new Vec2F(0.3f, 0.3f))
             };
 
             activePauseButton = 0;
@@ -77,10 +77,8 @@ namespace Galaga_Exercise_3._1.GalagaStates {
                     break;
                 case 1:
                     if (keyAction == "KEY_PRESS") {
-                        GalagaBus.GetBus().RegisterEvent(
-                            GameEventFactory<object>.CreateGameEventForAllProcessors(
-                                GameEventType.GameStateEvent, this, 
-                                "CHANGE_STATE", "MAIN_MENU", ""));    
+                        GalagaBus.GetBus().RegisterEvent(GameEventFactory<object>.CreateGameEventForAllProcessors(
+                            GameEventType.WindowEvent, this, "CLOSE_WINDOW", "", ""));   
                     }
                     break;
                 }

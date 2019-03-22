@@ -75,7 +75,6 @@ namespace Galaga_Exercise_3._1.GalagaStates {
                 switch (activeMenuButton) {
                     case 0:
                         if (keyAction == "KEY_PRESS") {
-                            gameRunning.InitializeGameState();
                             GalagaBus.GetBus().RegisterEvent(GameEventFactory<object>.CreateGameEventForAllProcessors
                             (GameEventType.GameStateEvent, this,
                                 "CHANGE_STATE", "GAME_RUNNING", ""));    

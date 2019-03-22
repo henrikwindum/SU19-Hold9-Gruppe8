@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGalaga3", "TestGalaga3\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaga-Exercise-3.1", "Galaga-Exercise-3.1\Galaga-Exercise-3.1.csproj", "{430305B5-5822-401A-B10A-0FE96BC76D75}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateMachineTesting", "StateMachineTesting\StateMachineTesting.csproj", "{4BDFAC18-ECC2-4292-A32D-EADC6FCEE6DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,5 +34,9 @@ Global
 		{430305B5-5822-401A-B10A-0FE96BC76D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{430305B5-5822-401A-B10A-0FE96BC76D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{430305B5-5822-401A-B10A-0FE96BC76D75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BDFAC18-ECC2-4292-A32D-EADC6FCEE6DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BDFAC18-ECC2-4292-A32D-EADC6FCEE6DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BDFAC18-ECC2-4292-A32D-EADC6FCEE6DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BDFAC18-ECC2-4292-A32D-EADC6FCEE6DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

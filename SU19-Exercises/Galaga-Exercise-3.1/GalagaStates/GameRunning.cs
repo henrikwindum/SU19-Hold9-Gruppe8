@@ -25,7 +25,6 @@ namespace Galaga_Exercise_3._1.GalagaStates {
         private List<Image> explosionStrides;
 
         private Score score;
-        //private Game game;
         
         public GameRunning(){
             player = new Player(new DynamicShape(new Vec2F(0.45f, 0.1f),
@@ -76,18 +75,6 @@ namespace Galaga_Exercise_3._1.GalagaStates {
         }
 
         public void InitializeGameState() {
-            var enemyStrides = ImageStride.CreateStrides(4,
-                Path.Combine("Assets", "Images", "BlueMonster.png"));
-            
-            var enemyStrides2 = ImageStride.CreateStrides(2,
-                Path.Combine("Assets", "Images", "GreenMonster.png"));
-
-            
-            monsters = new Parallel(4);
-            monsters.CreateEnemies(enemyStrides);
-            
-            monsters2 = new Triangle(4);
-            monsters2.CreateEnemies(enemyStrides2);
         }
 
         public void UpdateGameLogic() {
