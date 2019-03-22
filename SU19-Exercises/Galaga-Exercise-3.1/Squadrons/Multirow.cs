@@ -7,15 +7,15 @@ using Galaga_Exercise_3._1.GalagaEntities;
 
 namespace Galaga_Exercise_3._1.Squadrons {
     public class Multirow : ISquadron {
-        private int maxrow;
+        private int maxRow;
 
-        public Multirow(int yrows) {
-            if (yrows > 5) {
+        public Multirow(int rows) {
+            if (rows > 5) {
                 throw new Exception("Method Multirow: There can be a maximum of 5 rows");
             }
 
             Enemies = new EntityContainer<Enemy>();
-            maxrow = yrows;
+            maxRow = rows;
             MaxEnemies = Enemies.CountEntities();
         }
 
@@ -23,7 +23,7 @@ namespace Galaga_Exercise_3._1.Squadrons {
         public EntityContainer<Enemy> Enemies { get; set; }
 
         void ISquadron.CreateEnemies(List<Image> enemyStrides) {
-            for (var i = 1; i < maxrow; i++) {
+            for (var i = 1; i < maxRow; i++) {
                 for (var j = 1; j < 9; j++) {
                     Enemies.AddDynamicEntity(
                         new Enemy(new DynamicShape(new Vec2F(0.1f * j, 1.0f - 0.1f * i),

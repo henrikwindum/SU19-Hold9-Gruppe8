@@ -1,6 +1,6 @@
 using System;
 
-namespace Galaga_Exercise_3.GalagaStates {
+namespace Galaga_Exercise_3._1.GalagaStates {
     public class StateTransformer {
         public static GameStateType TransformStringToState(string state) {
             switch (state) {

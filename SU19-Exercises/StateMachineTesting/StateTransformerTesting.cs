@@ -1,10 +1,8 @@
-﻿using Galaga_Exercise_3.GalagaStates;
 using Galaga_Exercise_3._1.GalagaStates;
 using NUnit.Framework;
 
-namespace TestGalaga3 {
-    [TestFixture]
-    public class Tests {
+namespace StateMachineTesting {
+    public class StateTransformerTesting {
         [Test]
         public void GamePauseTest1() {
             Assert.AreEqual("GAME_PAUSED",

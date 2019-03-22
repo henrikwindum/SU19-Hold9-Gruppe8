@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.IO;
 using DIKUArcade.Entities;
@@ -46,7 +45,7 @@ namespace Galaga_Exercise_3._1.GalagaStates {
             zigzagdown = new ZigZagDown();
             movedown = new MoveDown();
             
-            playerShots = new List<PlayerShot>();
+            PlayerShots = new List<PlayerShot>();
             
             explosionStrides =
                 ImageStride.CreateStrides(8, Path.Combine("Assets", "Images", "Explosion.png"));
@@ -56,14 +55,14 @@ namespace Galaga_Exercise_3._1.GalagaStates {
                 new Vec2F(0.2f, 0.2f));
         }
         
-        public List<PlayerShot> playerShots { get; set; }
+        public List<PlayerShot> PlayerShots { get; set; }
         
         public void AddShots() {
             var shot = new PlayerShot(new DynamicShape(
                     new Vec2F(player.Shape.Position.X + 0.046f, player.Shape.Position.Y + 0.08f),
                     new Vec2F(0.008f, 0.027f)),
                 new Image(Path.Combine("Assets", "Images", "BulletRed2.png")));
-            playerShots.Add(shot);
+            PlayerShots.Add(shot);
         }
         
         public static GameRunning GetInstance() {
@@ -98,7 +97,7 @@ namespace Galaga_Exercise_3._1.GalagaStates {
                 }
             }
             
-            foreach (var shot in playerShots) {
+            foreach (var shot in PlayerShots) {
                 shot.RenderEntity();
             }
             explosions.RenderAnimations();
@@ -107,7 +106,7 @@ namespace Galaga_Exercise_3._1.GalagaStates {
         }
 
         public void IterateShots() {
-            foreach (var shot in playerShots) {
+            foreach (var shot in PlayerShots) {
                 shot.Shape.Move();
                 if (shot.Shape.Position.Y > 1.0f) {
                     shot.DeleteEntity();
@@ -129,13 +128,13 @@ namespace Galaga_Exercise_3._1.GalagaStates {
 
                     // Makes sure that PlayerShot gets deleted when colliding
                     var newShots = new List<PlayerShot>();
-                    foreach (var deleteshot in playerShots) {
+                    foreach (var deleteshot in PlayerShots) {
                         if (!deleteshot.IsDeleted()) {
                             newShots.Add(deleteshot);
                         }
                     }
 
-                    playerShots = newShots;
+                    PlayerShots = newShots;
 
                     // Makes sure that Enemy gets deleted when colliding
                     var newEnemies = new EntityContainer<Enemy>();
@@ -148,7 +147,6 @@ namespace Galaga_Exercise_3._1.GalagaStates {
                             score.AddPoints();
                         }
                     }
-
                     monsters.Enemies = newEnemies;
                 }
 
@@ -167,13 +165,13 @@ namespace Galaga_Exercise_3._1.GalagaStates {
                     }
 
                     var newShots = new List<PlayerShot>();
-                    foreach (var deleteshot in playerShots) {
+                    foreach (var deleteshot in PlayerShots) {
                         if (!deleteshot.IsDeleted()) {
                             newShots.Add(deleteshot);
                         }
                     }
 
-                    playerShots = newShots;
+                    PlayerShots = newShots;
 
                     var newEnemies = new EntityContainer<Enemy>();
                     foreach (Enemy enemy in monsters2.Enemies) {
@@ -185,7 +183,6 @@ namespace Galaga_Exercise_3._1.GalagaStates {
                             score.AddPoints();
                         }
                     }
-
                     monsters2.Enemies = newEnemies;
                 } 
             }
@@ -197,8 +194,6 @@ namespace Galaga_Exercise_3._1.GalagaStates {
                 new ImageStride(explosionLength / 8, explosionStrides));
         }
         
-        private void KeyPress(string key) {}
-
         private void Direction(Vec2F vec) {
             player.Shape.AsDynamicShape().Direction = vec;
         }

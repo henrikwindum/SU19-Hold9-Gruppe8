@@ -1,4 +1,3 @@
-using System;
 using System.Drawing;
 using System.IO;
 using DIKUArcade.Entities;
@@ -13,10 +12,8 @@ namespace Galaga_Exercise_3._1.GalagaStates {
         private static MainMenu instance;
         private int activeMenuButton;
         private int inactiveMenuButton;
-        private GameRunning gameRunning;
 
         private Entity backGroundImage;
-        private int maxMenuButtons;
         private Text[] menuButtons;
 
         public MainMenu() {
@@ -31,9 +28,6 @@ namespace Galaga_Exercise_3._1.GalagaStates {
 
             activeMenuButton = 0;
             inactiveMenuButton = 1;
-            maxMenuButtons = menuButtons.Length;
-            
-            gameRunning = new GameRunning();
         }
 
         public void GameLoop() { }
@@ -50,7 +44,6 @@ namespace Galaga_Exercise_3._1.GalagaStates {
             foreach (var button in menuButtons) {
                 button.RenderText();
             }
-            
         }
 
         public static MainMenu GetInstance() {
