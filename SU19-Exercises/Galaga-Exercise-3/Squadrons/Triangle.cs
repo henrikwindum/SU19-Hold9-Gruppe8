@@ -6,7 +6,7 @@ using DIKUArcade.Math;
 using Galaga_Exercise_3.GalagaEntities;
 
 namespace Galaga_Exercise_3.Squadrons {
-    public class Triangle : ISquadron{
+    public class Triangle : ISquadron {
         private int yrows;
 
         public Triangle(int maxrows) {

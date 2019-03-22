@@ -4,22 +4,18 @@ using DIKUArcade.EventBus;
 using DIKUArcade.Graphics;
 using DIKUArcade.Math;
 using Galaga_Exercise_3.GalagaEntities;
+using Galaga_Exercise_3.GalagaStates;
 
 namespace Galaga_Exercise_3 {
-    public class Player : IGameEventProcessor<object> {
+    public class Player : Entity {
         private Game game;
         public Entity player;
 
-        public Player(Game game) {
-            player = new Entity(
-                new DynamicShape(new Vec2F(0.45f, 0.1f), new Vec2F(0.1f, 0.1f)),
-                new Image(Path.Combine("Assets", "Images", "Player.png")));
-            this.game = game;
-        }
-
+        public Player(Shape shape, IBaseImage image) : base(shape, image) {}
+/*
         public void ProcessEvent(GameEventType eventType,
             GameEvent<object> gameEvent) {
-            if (eventType == GameEventType.PlayerEvent) {
+            if (eventType == GameEventType.InputEvent) {
                 switch (gameEvent.Parameter1) {
                 case "Moving_Left":
                     var vec = new Vec2F(-0.005f, 0.0f);
@@ -36,20 +32,16 @@ namespace Galaga_Exercise_3 {
                 }
             }
         }
-
-        private void Direction(Vec2F vec) {
-            player.Shape.AsDynamicShape().Direction = vec;
-        }
-
+*/
         public void Move() {
-            if (player.Shape.AsDynamicShape().Position.X +
-                player.Shape.AsDynamicShape().Direction.X <= 0.9f &&
-                player.Shape.AsDynamicShape().Position.X +
-                player.Shape.AsDynamicShape().Direction.X >= 0.0f) {
-                player.Shape.Move();
+            if (this.Shape.AsDynamicShape().Position.X +
+                this.Shape.AsDynamicShape().Direction.X <= 0.9f &&
+                this.Shape.AsDynamicShape().Position.X +
+                this.Shape.AsDynamicShape().Direction.X >= 0.0f) {
+                this.Shape.Move();
             }
         }
-
+/*
         public void AddShots() {
             var shot = new PlayerShot(game,
                 new DynamicShape(
@@ -57,6 +49,6 @@ namespace Galaga_Exercise_3 {
                     new Vec2F(0.008f, 0.027f)),
                 new Image(Path.Combine("Assets", "Images", "BulletRed2.png")));
             game.playerShots.Add(shot);
-        }
+        }*/
     }
 }

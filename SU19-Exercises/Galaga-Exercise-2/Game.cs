@@ -19,21 +19,21 @@ namespace Galaga_Exercise_2 {
         private GameTimer gameTimer;
         private ISquadron monsters;
         private ISquadron monsters2;
-        private IMovementStrategy zigzagdown;
         private IMovementStrategy movedown;
         private Player player;
         private Score score;
         private Window win;
+        private IMovementStrategy zigzagdown;
 
         public Game() {
             win = new Window("Galaga", 500, 500);
             player = new Player(this);
-            List<Image> enemyStrides = ImageStride.CreateStrides(4,
+            var enemyStrides = ImageStride.CreateStrides(4,
                 Path.Combine("Assets", "Images", "BlueMonster.png"));
 
-            List<Image> enemyStrides2 = ImageStride.CreateStrides(2,
+            var enemyStrides2 = ImageStride.CreateStrides(2,
                 Path.Combine("Assets", "Images", "GreenMonster.png"));
-            
+
             // Wave 1
             monsters = new Parallel(4);
             monsters.CreateEnemies(enemyStrides);
@@ -45,7 +45,7 @@ namespace Galaga_Exercise_2 {
             monsters2.CreateEnemies(enemyStrides2);
 
             movedown = new MoveDown();
-                
+
             eventBus = new GameEventBus<object>();
             eventBus.InitializeEventBus(new List<GameEventType> {
                 GameEventType.InputEvent,
@@ -124,6 +124,7 @@ namespace Galaga_Exercise_2 {
                             newShots.Add(deleteshot);
                         }
                     }
+
                     playerShots = newShots;
 
                     // Makes sure that Enemy gets deleted when colliding
@@ -137,9 +138,10 @@ namespace Galaga_Exercise_2 {
                             score.AddPoints();
                         }
                     }
-                    monsters.Enemies = newEnemies;    
+
+                    monsters.Enemies = newEnemies;
                 }
-                
+
                 // Collision detection for 2. wave 
                 if (monsters.Enemies.CountEntities() == 0) {
                     foreach (Entity enemy in monsters2.Enemies) {
@@ -160,6 +162,7 @@ namespace Galaga_Exercise_2 {
                             newShots.Add(deleteshot);
                         }
                     }
+
                     playerShots = newShots;
 
                     var newEnemies = new EntityContainer<Enemy>();
@@ -172,7 +175,8 @@ namespace Galaga_Exercise_2 {
                             score.AddPoints();
                         }
                     }
-                    monsters2.Enemies = newEnemies;    
+
+                    monsters2.Enemies = newEnemies;
                 }
             }
         }
@@ -184,14 +188,15 @@ namespace Galaga_Exercise_2 {
                     // Update game logic here
                     win.PollEvents();
                     eventBus.ProcessEvents();
-                    
+
                     player.Move();
-                    
+
                     // Adding movement to player entities
                     zigzagdown.MoveEnemies(monsters.Enemies);
                     if (monsters.Enemies.CountEntities() == 0) {
-                        movedown.MoveEnemies(monsters2.Enemies);    
+                        movedown.MoveEnemies(monsters2.Enemies);
                     }
+
                     IterateShots();
                 }
 

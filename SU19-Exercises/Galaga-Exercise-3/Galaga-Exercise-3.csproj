@@ -42,7 +42,11 @@
         <Compile Include="GalagaBus.cs" />
         <Compile Include="GalagaEntities\Enemy.cs" />
         <Compile Include="GalagaEntities\PlayerShot.cs" />
+        <Compile Include="GalagaStates\GamePaused.cs" />
+        <Compile Include="GalagaStates\GameRunning.cs" />
         <Compile Include="GalagaStates\GameStateType.cs" />
+        <Compile Include="GalagaStates\MainMenu.cs" />
+        <Compile Include="GalagaStates\StateMachine.cs" />
         <Compile Include="GalagaStates\StateTransformer.cs" />
         <Compile Include="Game.cs" />
         <Compile Include="MovementStrategy\IMovementStrategy.cs" />

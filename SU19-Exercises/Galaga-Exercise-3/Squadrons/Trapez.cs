@@ -6,7 +6,7 @@ using DIKUArcade.Math;
 using Galaga_Exercise_3.GalagaEntities;
 
 namespace Galaga_Exercise_3.Squadrons {
-    public class Trapez : ISquadron{
+    public class Trapez : ISquadron {
         private int yrows;
 
         public Trapez(int maxrows) {

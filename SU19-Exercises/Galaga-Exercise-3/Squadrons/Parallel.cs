@@ -6,7 +6,7 @@ using DIKUArcade.Math;
 using Galaga_Exercise_3.GalagaEntities;
 
 namespace Galaga_Exercise_3.Squadrons {
-    public class Parallel : ISquadron{
+    public class Parallel : ISquadron {
         private int yrows;
 
         public Parallel(int maxrows) {
