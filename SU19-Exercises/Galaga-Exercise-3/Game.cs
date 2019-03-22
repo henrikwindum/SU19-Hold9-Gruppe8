@@ -39,50 +39,21 @@ namespace Galaga_Exercise_3 {
 
             //var enemyStrides2 = ImageStride.CreateStrides(2,
               //  Path.Combine("Assets", "Images", "GreenMonster.png"));
-
-            //gameRunning = new GameRunning();
-            // Wave 1
-           // monsters = new Parallel(4);
-            //monsters.CreateEnemies(enemyStrides);
-
-            //zigzagdown = new ZigZagDown();
-
-            // Wave 2
-            //monsters2 = new Triangle(4);
-            //monsters2.CreateEnemies(enemyStrides2);
-
-            //movedown = new MoveDown();
-            
             
             GalagaBus.GetBus().InitializeEventBus(new List<GameEventType> {
                 GameEventType.InputEvent,
                 GameEventType.WindowEvent,
-                GameEventType.PlayerEvent,
                 GameEventType.GameStateEvent
             });
             stateMachine = new StateMachine();
             win.RegisterEventBus(GalagaBus.GetBus());
             GalagaBus.GetBus().Subscribe(GameEventType.InputEvent, this);
             GalagaBus.GetBus().Subscribe(GameEventType.WindowEvent, this);
-            GalagaBus.GetBus().Subscribe(GameEventType.PlayerEvent, this);
             GalagaBus.GetBus().Subscribe(GameEventType.GameStateEvent,this);
-
-            
-            //mainMenu = new MainMenu();
-            //gameState = new GameStateType();
             
             gameTimer = new GameTimer(60, 60);
-
-           // playerShots = new List<PlayerShot>();
-            //explosionStrides =
-            //    ImageStride.CreateStrides(8, Path.Combine("Assets", "Images", "Explosion.png"));
-            //explosions = new AnimationContainer(10);
-
-            score = new Score(new Vec2F(0.8f, 0.5f),
-                new Vec2F(0.2f, 0.2f));
         }
 
-        //public List<PlayerShot> playerShots { get; set; }
 
         public void ProcessEvent(GameEventType eventType,
             GameEvent<object> gameEvent) {
@@ -103,98 +74,7 @@ namespace Galaga_Exercise_3 {
                 }
             }
         }
-/*
-        public void AddExplosion(float posX, float posY, float extentX, float extentY) {
-            explosions.AddAnimation(
-                new StationaryShape(posX, posY, extentX, extentY), explosionLength,
-                new ImageStride(explosionLength / 8, explosionStrides));
-        }*/
-/*
-        public void IterateShots() {
-            foreach (var shot in playerShots) {
-                shot.Shape.Move();
-                if (shot.Shape.Position.Y > 1.0f) {
-                    shot.DeleteEntity();
-                }
 
-                // Collision detection for 1. wave                
-                if (monsters.Enemies.CountEntities() != 0) {
-                    foreach (Entity enemy in monsters.Enemies) {
-                        switch (CollisionDetection.Aabb((DynamicShape) shot.Shape, enemy.Shape)
-                            .Collision) {
-                        case true:
-                            AddExplosion(enemy.Shape.Position.X, enemy.Shape.Position.Y,
-                                0.1f, 0.1f);
-                            shot.DeleteEntity();
-                            enemy.DeleteEntity();
-                            break;
-                        }
-                    }
-
-                    // Makes sure that PlayerShot gets deleted when colliding
-                    var newShots = new List<PlayerShot>();
-                    foreach (var deleteshot in playerShots) {
-                        if (!deleteshot.IsDeleted()) {
-                            newShots.Add(deleteshot);
-                        }
-                    }
-
-                    playerShots = newShots;
-
-                    // Makes sure that Enemy gets deleted when colliding
-                    var newEnemies = new EntityContainer<Enemy>();
-                    foreach (Enemy enemy in monsters.Enemies) {
-                        if (!enemy.IsDeleted()) {
-                            newEnemies.AddDynamicEntity(enemy);
-                        }
-
-                        if (enemy.IsDeleted()) {
-                            score.AddPoints();
-                        }
-                    }
-
-                    monsters.Enemies = newEnemies;
-                }
-
-                // Collision detection for 2. wave 
-                if (monsters.Enemies.CountEntities() == 0) {
-                    foreach (Entity enemy in monsters2.Enemies) {
-                        switch (CollisionDetection.Aabb((DynamicShape) shot.Shape, enemy.Shape)
-                            .Collision) {
-                        case true:
-                            AddExplosion(enemy.Shape.Position.X, enemy.Shape.Position.Y,
-                                0.1f, 0.1f);
-                            shot.DeleteEntity();
-                            enemy.DeleteEntity();
-                            break;
-                        }
-                    }
-
-                    var newShots = new List<PlayerShot>();
-                    foreach (var deleteshot in playerShots) {
-                        if (!deleteshot.IsDeleted()) {
-                            newShots.Add(deleteshot);
-                        }
-                    }
-
-                    playerShots = newShots;
-
-                    var newEnemies = new EntityContainer<Enemy>();
-                    foreach (Enemy enemy in monsters2.Enemies) {
-                        if (!enemy.IsDeleted()) {
-                            newEnemies.AddDynamicEntity(enemy);
-                        }
-
-                        if (enemy.IsDeleted()) {
-                            score.AddPoints();
-                        }
-                    }
-
-                    monsters2.Enemies = newEnemies;
-                }
-            }
-        }
-*/
         public void GameLoop() {
             while (win.IsRunning()) {
                 gameTimer.MeasureTime();
@@ -219,26 +99,6 @@ namespace Galaga_Exercise_3 {
                     stateMachine.ActiveState.RenderState();
                     win.SwapBuffers();
                 }
-                // Render gameplay entities here
-                    // player.player.RenderEntity();
-
-                        /*foreach (Entity entity in monsters.Enemies) {
-                            entity.RenderEntity();
-                        }*/
-
-                        /*if (monsters.Enemies.CountEntities() == 0) {
-                            foreach (Entity wave2 in monsters2.Enemies) {
-                                wave2.RenderEntity();
-                            }
-                        }
-
-                        foreach (var shot in playerShots) {
-                            shot.RenderEntity();
-                        }
-
-                        explosions.RenderAnimations();
-                        score.RenderScore();    
-                    }*/
                 if (gameTimer.ShouldReset()) {
                     // 1 second has passed - display last captured ups and fps
                     win.Title = "Galaga | UPS: " + gameTimer.CapturedUpdates +
@@ -255,42 +115,9 @@ namespace Galaga_Exercise_3 {
                         GameEventType.WindowEvent, this, "CLOSE_WINDOW",
                         "", ""));
                 break;
-            /*
-            case "KEY_A":
-            case "KEY_LEFT":
-                GalagaBus.GetBus().RegisterEvent(
-                    GameEventFactory<object>.CreateGameEventForAllProcessors(
-                        GameEventType.InputEvent, gameRunning, "",
-                        "Moving_Left", ""));
-                break;
-            case "KEY_D":
-            case "KEY_RIGHT":
-                GalagaBus.GetBus().RegisterEvent(
-                    GameEventFactory<object>.CreateGameEventForAllProcessors(
-                        GameEventType.InputEvent, gameRunning, "",
-                        "Moving_Right", ""));
-                break;
-            case "KEY_SPACE":
-                //player.AddShots();
-                break;*/
             }
         }
 
         public void KeyRelease(string key) { }
-        /*switch (key) {
-            case "KEY_D":
-            case "KEY_RIGHT":
-                GalagaBus.GetBus().RegisterEvent(
-                    GameEventFactory<object>.CreateGameEventForAllProcessors(
-                        GameEventType.InputEvent, this, "", "No_Movement", ""));
-                break;
-            case "KEY_A":
-            case "KEY_LEFT":
-                GalagaBus.GetBus().RegisterEvent(
-                    GameEventFactory<object>.CreateGameEventForAllProcessors(
-                        GameEventType.InputEvent, this, "", "No_Movement", ""));
-                break;
-            }
-        }*/
     }
 }
