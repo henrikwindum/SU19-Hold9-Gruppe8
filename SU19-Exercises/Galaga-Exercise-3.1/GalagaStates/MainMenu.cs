@@ -22,8 +22,10 @@ namespace Galaga_Exercise_3._1.GalagaStates {
                     new Vec2F(1.0f, 1.0f)),
                 new Image(Path.Combine("Assets", "Images", "TitleImage.png")));
             menuButtons = new[] {
-                new Text("New Game", new Vec2F(0.400f, 0.250f), new Vec2F(0.3f, 0.3f)),
-                new Text("Exit", new Vec2F(0.400f, 0.150f), new Vec2F(0.3f, 0.3f))
+                new Text("New Game", new Vec2F(0.400f, 0.250f), 
+                    new Vec2F(0.3f, 0.3f)),
+                new Text("Exit", new Vec2F(0.400f, 0.150f), 
+                    new Vec2F(0.3f, 0.3f))
             };
 
             activeMenuButton = 0;
@@ -50,7 +52,7 @@ namespace Galaga_Exercise_3._1.GalagaStates {
             return MainMenu.instance ?? (MainMenu.instance = new MainMenu());
         }
 
-        public void HandleKeyEvent(string keyValue, string keyAction){  // Message, Parameter1 
+        public void HandleKeyEvent(string keyValue, string keyAction){ 
             switch (keyValue) {
             case "KEY_UP":
                 if (keyAction == "KEY_PRESS") {
@@ -68,14 +70,17 @@ namespace Galaga_Exercise_3._1.GalagaStates {
                 switch (activeMenuButton) {
                     case 0:
                         if (keyAction == "KEY_PRESS") {
-                            GalagaBus.GetBus().RegisterEvent(GameEventFactory<object>.CreateGameEventForAllProcessors
+                            GalagaBus.GetBus().RegisterEvent(
+                                GameEventFactory<object>.CreateGameEventForAllProcessors
                             (GameEventType.GameStateEvent, this,
                                 "CHANGE_STATE", "GAME_RUNNING", ""));    
                         }
                         break;
                     case 1:
-                        GalagaBus.GetBus().RegisterEvent(GameEventFactory<object>.CreateGameEventForAllProcessors(
-                            GameEventType.WindowEvent, this, "CLOSE_WINDOW", "", ""));
+                        GalagaBus.GetBus().RegisterEvent(
+                            GameEventFactory<object>.CreateGameEventForAllProcessors(
+                            GameEventType.WindowEvent, this, "CLOSE_WINDOW", 
+                            "", ""));
                         break;
                 }
                 break;

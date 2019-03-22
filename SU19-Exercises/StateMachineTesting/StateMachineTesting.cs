@@ -7,7 +7,7 @@ using NUnit.Framework;
 
 namespace StateMachineTesting {
     [TestFixture]
-    public class Tests {
+    public class StateMachineTesting {
         private StateMachine stateMachine;
 
         [SetUp]
@@ -34,7 +34,8 @@ namespace StateMachineTesting {
         public void TestEventPaused() {
             GalagaBus.GetBus()
                 .RegisterEvent(GameEventFactory<object>.CreateGameEventForAllProcessors(
-                    GameEventType.GameStateEvent, this, "CHANGE_STATE", "GAME_PAUSED", ""));
+                    GameEventType.GameStateEvent, this, "CHANGE_STATE", 
+                    "GAME_PAUSED", ""));
             
             GalagaBus.GetBus().ProcessEventsSequentially();
             Assert.That(stateMachine.ActiveState, Is.InstanceOf<GamePaused>());
@@ -44,7 +45,8 @@ namespace StateMachineTesting {
         public void TestEventRunning() {
             GalagaBus.GetBus()
                 .RegisterEvent(GameEventFactory<object>.CreateGameEventForAllProcessors(
-                    GameEventType.GameStateEvent, this, "CHANGE_STATE", "GAME_RUNNING", ""));
+                    GameEventType.GameStateEvent, this, "CHANGE_STATE", 
+                    "GAME_RUNNING", ""));
             
             GalagaBus.GetBus().ProcessEventsSequentially();
             Assert.That(stateMachine.ActiveState, Is.InstanceOf<GameRunning>());
@@ -54,7 +56,8 @@ namespace StateMachineTesting {
         public void TestEventMainMenu() {
             GalagaBus.GetBus()
                 .RegisterEvent(GameEventFactory<object>.CreateGameEventForAllProcessors(
-                    GameEventType.GameStateEvent, this, "CHANGE_STATE", "MAIN_MENU", ""));
+                    GameEventType.GameStateEvent, this, "CHANGE_STATE", 
+                    "MAIN_MENU", ""));
             
             GalagaBus.GetBus().ProcessEventsSequentially();
             Assert.That(stateMachine.ActiveState, Is.InstanceOf<MainMenu>());

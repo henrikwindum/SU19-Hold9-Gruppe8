@@ -43,7 +43,7 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="StateTransformerTesting.cs" />
-        <Compile Include="Tests.cs" />
+        <Compile Include="StateMachineTesting.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>

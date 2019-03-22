@@ -18,11 +18,14 @@ namespace Galaga_Exercise_3._1.GalagaStates {
 
         public GamePaused() {
             pauseGroundImage = new Entity(
-                new StationaryShape(new Vec2F(0.0f,0.0f),new Vec2F(1.0f,1.0f)),
+                new StationaryShape(new Vec2F(0.0f,0.0f),
+                    new Vec2F(1.0f,1.0f)),
                 new Image(Path.Combine("Assets", "Images", "TitleImage.png")));
             pauseButtons = new[] {
-                new Text("Resume", new Vec2F(0.4f, 0.25f), new Vec2F(0.3f, 0.3f)),
-                new Text("Quit", new Vec2F(0.4f, 0.15f), new Vec2F(0.3f, 0.3f))
+                new Text("Resume", new Vec2F(0.4f, 0.25f), 
+                    new Vec2F(0.3f, 0.3f)),
+                new Text("Quit", new Vec2F(0.4f, 0.15f), 
+                    new Vec2F(0.3f, 0.3f))
             };
 
             activePauseButton = 0;
@@ -77,8 +80,10 @@ namespace Galaga_Exercise_3._1.GalagaStates {
                     break;
                 case 1:
                     if (keyAction == "KEY_PRESS") {
-                        GalagaBus.GetBus().RegisterEvent(GameEventFactory<object>.CreateGameEventForAllProcessors(
-                            GameEventType.WindowEvent, this, "CLOSE_WINDOW", "", ""));   
+                        GalagaBus.GetBus().RegisterEvent(
+                            GameEventFactory<object>.CreateGameEventForAllProcessors(
+                            GameEventType.WindowEvent, this, "CLOSE_WINDOW", 
+                            "", ""));   
                     }
                     break;
                 }

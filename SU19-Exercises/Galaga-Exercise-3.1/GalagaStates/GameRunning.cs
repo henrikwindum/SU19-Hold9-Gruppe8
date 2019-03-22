@@ -59,7 +59,8 @@ namespace Galaga_Exercise_3._1.GalagaStates {
         
         public void AddShots() {
             var shot = new PlayerShot(new DynamicShape(
-                    new Vec2F(player.Shape.Position.X + 0.046f, player.Shape.Position.Y + 0.08f),
+                    new Vec2F(player.Shape.Position.X + 0.046f, 
+                        player.Shape.Position.Y + 0.08f),
                     new Vec2F(0.008f, 0.027f)),
                 new Image(Path.Combine("Assets", "Images", "BulletRed2.png")));
             PlayerShots.Add(shot);
@@ -202,7 +203,8 @@ namespace Galaga_Exercise_3._1.GalagaStates {
             var vec3 = new Vec2F(0.0f,0.0f);
             switch (keyValue) {
             case "KEY_P":
-                GalagaBus.GetBus().RegisterEvent(GameEventFactory<object>.CreateGameEventForAllProcessors
+                GalagaBus.GetBus().RegisterEvent(
+                    GameEventFactory<object>.CreateGameEventForAllProcessors
                 (GameEventType.GameStateEvent, this,
                     "CHANGE_STATE", "GAME_PAUSED", ""));
                 break;
