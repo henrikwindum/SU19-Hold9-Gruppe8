@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaga-Exercise-3.1", "Gala
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateMachineTesting", "StateMachineTesting\StateMachineTesting.csproj", "{4BDFAC18-ECC2-4292-A32D-EADC6FCEE6DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceTaxi-1", "SpaceTaxi-1\SpaceTaxi-1.csproj", "{069B7ECB-A99A-40DF-A213-9C7E54167858}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,5 +34,9 @@ Global
 		{4BDFAC18-ECC2-4292-A32D-EADC6FCEE6DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BDFAC18-ECC2-4292-A32D-EADC6FCEE6DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BDFAC18-ECC2-4292-A32D-EADC6FCEE6DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{069B7ECB-A99A-40DF-A213-9C7E54167858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{069B7ECB-A99A-40DF-A213-9C7E54167858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{069B7ECB-A99A-40DF-A213-9C7E54167858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{069B7ECB-A99A-40DF-A213-9C7E54167858}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

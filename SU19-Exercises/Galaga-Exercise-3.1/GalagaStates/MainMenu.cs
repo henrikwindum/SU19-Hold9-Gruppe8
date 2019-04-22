@@ -34,7 +34,8 @@ namespace Galaga_Exercise_3._1.GalagaStates {
 
         public void GameLoop() { }
 
-        public void InitializeGameState() { }
+        public void InitializeGameState() {
+        }
 
         public void UpdateGameLogic() {
             menuButtons[activeMenuButton].SetColor(Color.Red);

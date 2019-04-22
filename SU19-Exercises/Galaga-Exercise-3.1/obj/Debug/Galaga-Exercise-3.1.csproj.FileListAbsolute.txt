@@ -9,3 +9,14 @@ C:\Users\Henrik Windum\Desktop\su19-hold9-gruppe8\SU19-Exercises\Galaga-Exercise
 C:\Users\Henrik Windum\Desktop\su19-hold9-gruppe8\SU19-Exercises\Galaga-Exercise-3.1\obj\Debug\Galaga-Exercise-3.1.csproj.CopyComplete
 C:\Users\Henrik Windum\Desktop\su19-hold9-gruppe8\SU19-Exercises\Galaga-Exercise-3.1\obj\Debug\Galaga_Exercise_3._1.exe
 C:\Users\Henrik Windum\Desktop\su19-hold9-gruppe8\SU19-Exercises\Galaga-Exercise-3.1\obj\Debug\Galaga_Exercise_3._1.pdb
+C:\Users\Henrik Windum\Desktop\SU19-Exercises\su19-hold9-gruppe8\SU19-Exercises\Galaga-Exercise-3.1\bin\Debug\Galaga_Exercise_3._1.exe
+C:\Users\Henrik Windum\Desktop\SU19-Exercises\su19-hold9-gruppe8\SU19-Exercises\Galaga-Exercise-3.1\bin\Debug\Galaga_Exercise_3._1.pdb
+C:\Users\Henrik Windum\Desktop\SU19-Exercises\su19-hold9-gruppe8\SU19-Exercises\Galaga-Exercise-3.1\bin\Debug\DIKUArcade.dll
+C:\Users\Henrik Windum\Desktop\SU19-Exercises\su19-hold9-gruppe8\SU19-Exercises\Galaga-Exercise-3.1\bin\Debug\OpenTK.dll
+C:\Users\Henrik Windum\Desktop\SU19-Exercises\su19-hold9-gruppe8\SU19-Exercises\Galaga-Exercise-3.1\bin\Debug\DIKUArcade.pdb
+C:\Users\Henrik Windum\Desktop\SU19-Exercises\su19-hold9-gruppe8\SU19-Exercises\Galaga-Exercise-3.1\bin\Debug\OpenTK.xml
+C:\Users\Henrik Windum\Desktop\SU19-Exercises\su19-hold9-gruppe8\SU19-Exercises\Galaga-Exercise-3.1\obj\Debug\Galaga-Exercise-3.1.csprojAssemblyReference.cache
+C:\Users\Henrik Windum\Desktop\SU19-Exercises\su19-hold9-gruppe8\SU19-Exercises\Galaga-Exercise-3.1\obj\Debug\Galaga-Exercise-3.1.csproj.CoreCompileInputs.cache
+C:\Users\Henrik Windum\Desktop\SU19-Exercises\su19-hold9-gruppe8\SU19-Exercises\Galaga-Exercise-3.1\obj\Debug\Galaga-Exercise-3.1.csproj.CopyComplete
+C:\Users\Henrik Windum\Desktop\SU19-Exercises\su19-hold9-gruppe8\SU19-Exercises\Galaga-Exercise-3.1\obj\Debug\Galaga_Exercise_3._1.exe
+C:\Users\Henrik Windum\Desktop\SU19-Exercises\su19-hold9-gruppe8\SU19-Exercises\Galaga-Exercise-3.1\obj\Debug\Galaga_Exercise_3._1.pdb
