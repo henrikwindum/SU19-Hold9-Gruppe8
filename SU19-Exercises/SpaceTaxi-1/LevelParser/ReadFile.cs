@@ -9,7 +9,6 @@ namespace SpaceTaxi_1.LevelParser {
         public Dictionary<char, string> dict;
         public List<string> boardList;        
         
-        // short-n-sweet.txt OR the-beach.txt (as 'level' input)
         public void Read(string level) {
             StreamReader file = new StreamReader(Path.Combine("Levels", level));
             boardList = new List<string>();
@@ -24,7 +23,6 @@ namespace SpaceTaxi_1.LevelParser {
                 if (counter < 24) {
                     boardList.Add(line);
                 }
-
             }
             file.Close();
         }
