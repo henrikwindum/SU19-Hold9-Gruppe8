@@ -23,7 +23,7 @@ namespace SpaceTaxi_1.LevelParser {
         /// Iterates over boardList and checks if the given key is found in Dict.
         /// For each given key that exists in the dictionary, a StationaryShape-object is created. 
         /// </summary>
-        public void CreateBoard() {
+        private void CreateBoard() {
             for (int i = 0; i < readFile.BoardList.Count; i++) {
                 string currentString = readFile.BoardList[i];
                 for (int j = 0; j < currentString.Length; j++) {
