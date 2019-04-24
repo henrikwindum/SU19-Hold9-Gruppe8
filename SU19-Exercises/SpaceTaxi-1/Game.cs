@@ -24,7 +24,7 @@ namespace SpaceTaxi_1 {
             win = new Window("Space Taxi Game v0.1", 500, AspectRatio.R1X1);
             
             // PaintBoard can either use 'the-beach.txt' or 'short-n-sweet.txt' as input.
-            paintBoard = new PaintBoard("the-beach.txt");
+            paintBoard = new PaintBoard("short-n-sweet.txt");
 
             // event bus
             eventBus = new GameEventBus<object>();
@@ -44,7 +44,7 @@ namespace SpaceTaxi_1 {
                 new StationaryShape(new Vec2F(0.0f, 0.0f), new Vec2F(1.0f, 1.0f)),
                 new Image(Path.Combine("Assets", "Images", "SpaceBackground.png"))
             );
-            //backGroundImage.RenderEntity();
+            backGroundImage.RenderEntity();
 
             // game entities
             player = new Player();

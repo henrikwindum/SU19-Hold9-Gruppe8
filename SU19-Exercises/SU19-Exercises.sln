@@ -4,8 +4,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaga-Exercise-1", "Galaga
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaga-Exercise-2", "Galaga-Exercise-2\Galaga-Exercise-2.csproj", "{EC364410-15FB-42E2-9C96-A23976F2BB45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIKUArcade", "..\DIKUArcade\DIKUArcade\DIKUArcade.csproj", "{A1E4E4DF-0967-4096-9E3C-FBC29B7D07DD}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaga-Exercise-3.1", "Galaga-Exercise-3.1\Galaga-Exercise-3.1.csproj", "{430305B5-5822-401A-B10A-0FE96BC76D75}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateMachineTesting", "StateMachineTesting\StateMachineTesting.csproj", "{4BDFAC18-ECC2-4292-A32D-EADC6FCEE6DE}"
@@ -13,6 +11,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceTaxi-1", "SpaceTaxi-1\SpaceTaxi-1.csproj", "{069B7ECB-A99A-40DF-A213-9C7E54167858}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevelParserTesting", "LevelParserTesting\LevelParserTesting.csproj", "{D652C5CC-0A9D-4D58-BD77-919CD67F739B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIKUArcade", "..\..\..\Galaga\DIKUArcade\DIKUArcade\DIKUArcade.csproj", "{A1E4E4DF-0967-4096-9E3C-FBC29B7D07DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,5 +44,9 @@ Global
 		{D652C5CC-0A9D-4D58-BD77-919CD67F739B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D652C5CC-0A9D-4D58-BD77-919CD67F739B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D652C5CC-0A9D-4D58-BD77-919CD67F739B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1E4E4DF-0967-4096-9E3C-FBC29B7D07DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1E4E4DF-0967-4096-9E3C-FBC29B7D07DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1E4E4DF-0967-4096-9E3C-FBC29B7D07DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1E4E4DF-0967-4096-9E3C-FBC29B7D07DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

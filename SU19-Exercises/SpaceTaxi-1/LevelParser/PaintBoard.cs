@@ -19,18 +19,20 @@ namespace SpaceTaxi_1.LevelParser {
 
         public EntityContainer<Entity> Images { get; }
         
-        // Iterates over boardList & checks if the given key is found in Dictionary dict.
+        /// <summary>
+        /// Iterates over boardList and checks if the given key is found in Dict.
+        /// For each given key that exists in the dictionary, a StationaryShape-object is created. 
+        /// </summary>
         public void CreateBoard() {
-            readFile.boardList.Reverse();
-            for (int i = 0; i < readFile.boardList.Count; i++) {
-                string currentString = readFile.boardList[i];
+            for (int i = 0; i < readFile.BoardList.Count; i++) {
+                string currentString = readFile.BoardList[i];
                 for (int j = 0; j < currentString.Length; j++) {
-                    if (readFile.dict.ContainsKey(currentString[j])) {
+                    if (readFile.Dict.ContainsKey(currentString[j])) {
                         Images.AddStationaryEntity(new Entity(
                             new StationaryShape(new Vec2F(j*height, i*width),
                                 new Vec2F(height, width)),
                             new Image(Path.Combine("Assets", "Images", 
-                                readFile.dict[currentString[j]]))));
+                                readFile.Dict[currentString[j]]))));
                     }
                 }    
             }
