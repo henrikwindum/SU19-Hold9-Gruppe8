@@ -24,9 +24,8 @@ namespace SpaceTaxi_1 {
             win = new Window("Space Taxi Game v0.1", 500, AspectRatio.R1X1);
             
             // PaintBoard can either use 'the-beach.txt' or 'short-n-sweet.txt' as input.
-            paintBoard = new PaintBoard("short-n-sweet.txt");
-            //paintBoard.CreateBoard();
-            
+            paintBoard = new PaintBoard("the-beach.txt");
+
             // event bus
             eventBus = new GameEventBus<object>();
             eventBus.InitializeEventBus(new List<GameEventType> {
